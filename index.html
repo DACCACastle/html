@@ -264,7 +264,47 @@
 
     </div>
 </div>
+    <!-- Login Modal Container -->
+    <div class="container">
+        <div class="modal fade" id="Modal_Login" role="dialog">
+            <div class="modal-dialog">
+            <div class="modal-content">
     
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LOGIN</h4>
+            </div>
+    
+            <div class="modal-body">
+            <div class="container">
+            <form class="form-horizontal" action="./php/login.php" method="POST" name="login-form">
+    
+                <div class="form-group">
+                    <label style="text-align:left" for="login_id" class="col-sm-1 control-label">ID</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" name="login_id" id="login_id" maxlength="20" type="text" autofocus placeholder="User ID Here" required autocomplete="off" >
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label style="text-align:left" for="login_pw" class="col-sm-1 control-label">PW</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" name="login_pw" id="login_pw" maxlength="30" type="password" autofocus placeholder="User Password Here" required autocomplete="off" >
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default">LOGIN</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+            </div>
+            </form>
+    
+            </div>
+            </div>
+        </div>
+        </div>   
     <!-- SignUP Modal Container -->
     <div class="container">
         <div class="modal fade" id="Modal_Signup" role="dialog">
