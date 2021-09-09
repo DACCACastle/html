@@ -79,8 +79,8 @@
                 </div>
                 <div class="collapse navbar-collapse " id="MyNav" style="color:black">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">클래스</a></li>
-                    <li><a href="#">스토어</a></li>
+                    <li><a href="../index_auth.html">클래스</a></li>
+                    <li><a href="../storedetail.html">스토어</a></li>
                     <li><a href="#">이벤트</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">고객센터</a>
