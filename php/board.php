@@ -52,6 +52,10 @@
         color: white;
         background-color: black;
     }
+    .carousel-control.left,
+    .carousel-control.right {
+            background-image: none
+    }
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
