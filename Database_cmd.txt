@@ -98,3 +98,4 @@ $Auto_Increment = "UPDATE member SET member.no = @CNT:=@CNT+1";
 
 isset 함수 : 데이터가 설정되었는지 확인
 LIMIT N, M : N번 부터 M개 까지 출력
+
