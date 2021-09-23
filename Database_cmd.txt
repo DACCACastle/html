@@ -1,8 +1,8 @@
 ﻿1. User, Database 생성 및 권한부여
 MariaDB [none]> create database damem;
 Query OK, 1 row affected (0.01 sec)
-
 MariaDB [none]> grant all privileges on damem.* to itbank@localhost identified by 'itbank';
+MariaDB [none]> grant all privileges on damem.* to itbank@'%' identified by 'itbank';
 Query OK, 0 rows affected (0.00 sec)
 
 2. Member Table 생성
