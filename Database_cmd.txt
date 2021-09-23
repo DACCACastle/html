@@ -98,3 +98,17 @@ $Auto_Increment = "UPDATE member SET member.no = @CNT:=@CNT+1";
 
 isset 함수 : 데이터가 설정되었는지 확인
 LIMIT N, M : N번 부터 M개 까지 출력
+
+
+[ DB ]
+yum -y install mariadb*
+[ mariadb 초기 설정 진행 후 ]
+mysql -u root -p
+create database damem;
+grant all privileges on damem.* to itbank@'192.168.1.%' identified by 'itbank';
+use damem;
+create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null);
+create table reserve(No int auto_increment primary key, Class varchar(30) not null, Name varchar(50) not null, phone varchar(50)  not null);
+create table board(No int auto_increment primary key, Title varchar(50), Content varchar(500), Date varchar(50));
+insert into board value(1,"DACCA Notice","Welcome This is DACCA Notice","2021-08-30");
+create table store(No int auto_increment primary key, Prod varchar(50) not null, Count int not null, Address varchar(500) not null, Name varchar(50) not null, Phone varchar(50) not null); 
