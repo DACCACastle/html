@@ -13,6 +13,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
+        .navbar {
+            font-size: 20px;
+            margin-bottom: 0;
+            border-radius: 0;
+            margin-top: 17px;
+            outline: 0;
+            border: 0;
+            font-family: SpoqaHanSansNeo-Regular;
+            text-align: center;
+        }
+
+        .modal-content {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .collapse>.nav>li>a {
+            color: black;
+            width: 230px;
+        }
+
         a:link {
             color: black;
             text-decoration: none;
@@ -37,25 +59,9 @@
             text-decoration: none
         }
 
-        .navbar {
-            font-size: 15px;
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
         .carousel-inner>.item>img {
             width: 1200px;
             height: 600px;
-        }
-
-        .modal-content {
-            font-size: 15px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .collapse>.nav>li>a {
-            color: black;
         }
 
         .collapse>.nav>li>a:hover {
@@ -72,16 +78,23 @@
             display: block;
             margin-top: 0;
         }
+
+        @font-face {
+            font-family: 'SpoqaHanSansNeo-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body style="font-family: 'Nanum Gothic', sans-serif;">
     <!-- Navigation Bar Container -->
-    <div class="container">
+    <div>
         <div class="row">
             <div class="col-sm-12">
                 <nav class="navbar navbar-inverse navbar-fixed-top " style="background-color: #ffff;">
-                    <div class="container">
+                    <div>
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNav">
                                 <span class="icon-bar"></span>
@@ -89,18 +102,19 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="/index_auth.html">
-                                <img style="max-width:80px; margin-top: -15px;" src="../images/logo2.png">
+                                <img style="max-width:150px; margin-top: -12px; margin-right: 100px; margin-left: 20px;"
+                                    src="./images/logo2.png">
                             </a>
                         </div>
                         <div class="collapse navbar-collapse " id="MyNav" style="color:black">
                             <ul class="nav navbar-nav">
-                                <li><a href="./class.html">클래스</a></li>
-                                <li><a href="./store.html">스토어</a></li>
-                                <li><a href="./stream.html">LIVE</a></li>
+                                <li><a href="../class.html">클래스</a></li>
+                                <li><a href="../store.html">스토어</a></li>
+                                <li><a href="stream.html">LIVE</a></li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">고객센터</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="./php/board.php">공지사항</a></li>
+                                        <li><a href="./board.php">공지사항</a></li>
                                         <li><a href="#">FAQ</a></li>
                                         <li><a href="#">1:1 문의</a></li>
                                     </ul>
@@ -129,11 +143,15 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div style="padding-top: 10%;">
-            <video muted autoplay controls loops>
-                <source src="https://app-data-44677.s3.ap-northeast-2.amazonaws.com/%5B%EB%AF%B8%EC%8A%A4%ED%84%B0+%EC%85%98%EC%83%A4%EC%9D%B8+OST+Part+9%5D+%EC%98%A4%EC%A1%B4+(O3ohn)+-+Shine+Your+Star+(Prod.+by+ZICO)+MV.mp4" type="video/mp4">
-            </video>
+    <div>
+        <div style="padding-top: 80px;">
+            <p align="middle">
+                <video muted autoplay controls loops style="width: 80%; text-align: center;">
+                    <source
+                        src="https://app-data-44677.s3.ap-northeast-2.amazonaws.com/%5B%EB%AF%B8%EC%8A%A4%ED%84%B0+%EC%85%98%EC%83%A4%EC%9D%B8+OST+Part+9%5D+%EC%98%A4%EC%A1%B4+(O3ohn)+-+Shine+Your+Star+(Prod.+by+ZICO)+MV.mp4"
+                        type="video/mp4">
+                </video>
+            </p>
         </div>
     </div>
     <br>
@@ -143,11 +161,11 @@
     <div class="container">
         <div class="button" class="text-center">
             <a class="col-md-4 text-center" style="font-size:25pt; color:black; font-weight:bolder;"
-                class="btn btn-default" style="color:black" href="./stream.html">상세 설명</a>
+                class="btn btn-default" style="color:black" href="./board.php">상세 설명</a>
             <a class="col-md-4 text-center" style="font-size: 25pt; color:black; font-weight:bolder;"
-                class="btn btn-default" style="color:black" href="./stream.html">수강 후기</a>
+                class="btn btn-default" style="color:black" href="./board.php">수강 후기</a>
             <a class="col-md-4 text-center" style="font-size:25pt; color:black; font-weight:bolder;"
-                class="btn btn-default" style="color:black" href="./stream.html">1:1 문의</a>
+                class="btn btn-default" style="color:black" href="./board.php">1:1 문의</a>
             <br><br>
             <hr class="one">
 
@@ -281,72 +299,72 @@
         </div>
 
                 -->
-        <!-- WRITE Modal Container -->
-        <div class="container">
-            <div class="modal fade" id="Modal_Write" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+            <!-- WRITE Modal Container -->
+            <div class="container">
+                <div class="modal fade" id="Modal_Write" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
 
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">WRITE</h4>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="container">
-                                <form class="form-horizontal" action="./board_write.php" method="POST"
-                                    name="board_write-form">
-                                    <div class="form-group">
-                                        <label style="text-align:left" for="title"
-                                            class="col-sm-2 control-label">TITLE</label>
-                                        <div class="col-sm-6">
-                                            <input class="form-control" name="title" id="title" maxlength="20"
-                                                type="text" autofocus placeholder="Title Input" required
-                                                autocomplete="off">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label style="text-align:left" for="pw"
-                                            class="col-sm-2 control-label">CONTENT</label>
-                                        <div class="col-sm-6">
-                                            <textarea class="form-control" rows="20" name="content" id="content"
-                                                maxlength="100" type="text" placeholder="Content Input" required
-                                                autocomplete="off"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label style="text-align:left" for="date"
-                                            class="col-sm-2 control-label">DATE</label>
-                                        <div class="col-sm-6">
-                                            <input class="form-control" type="date" id='date' name="date" readonly>
-                                            <script>document.getElementById('date').value = new Date().toISOString().slice(0, 10);</script>
-                                        </div>
-                                    </div>
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">WRITE</h4>
                             </div>
-                        </div>
 
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-default">WRITE</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <form class="form-horizontal" action="./board_write.php" method="POST"
+                                        name="board_write-form">
+                                        <div class="form-group">
+                                            <label style="text-align:left" for="title"
+                                                class="col-sm-2 control-label">TITLE</label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" name="title" id="title" maxlength="20"
+                                                    type="text" autofocus placeholder="Title Input" required
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label style="text-align:left" for="pw"
+                                                class="col-sm-2 control-label">CONTENT</label>
+                                            <div class="col-sm-6">
+                                                <textarea class="form-control" rows="20" name="content" id="content"
+                                                    maxlength="100" type="text" placeholder="Content Input" required
+                                                    autocomplete="off"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label style="text-align:left" for="date"
+                                                class="col-sm-2 control-label">DATE</label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" type="date" id='date' name="date" readonly>
+                                                <script>document.getElementById('date').value = new Date().toISOString().slice(0, 10);</script>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-default">WRITE</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+                            </div>
+                            </form>
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- footer Container -->
-        <footer class="container text-center">
-            <div class="col-md-4">
-                <p><span class="glyphicon glyphicon-map-marker"></span> Seoul, KR</p>
-                <p><span class="glyphicon glyphicon-phone"></span> Phone: +82 010-4678-0000</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> Email: DACAA@DACAA.com</p>
-            </div>
-            <p><span>Cloud System Test Site<br>Copyright &copy; Team_Castle</span></p>
-        </footer>
-        <br><br><br><br>
+
+            <!-- footer Container -->
+            <footer class="container text-center">
+                <div class="col-md-4">
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Seoul, KR</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> Phone: +82 010-4678-0000</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> Email: DACAA@DACAA.com</p>
+                </div>
+                <p><span>Cloud System Test Site<br>Copyright &copy; Team_Castle</span></p>
+            </footer>
+            <br><br><br><br>
 </body>
 
 </html>
