@@ -1,10 +1,10 @@
 <?php
     // mysqli
     $db_host = "dbaddress";
-    $db_user = "itbank";
-    $db_pass = "itbank";
+    $db_user = "asdASD123";
+    $db_pass = "asdASD123";
     $db_name = "damem";
-    $conn = mysqli_connect('dbaddress','itbank','itbank','damem');
+    $conn = mysqli_connect('dbaddress','asdASD123','asdASD123','damem');
     /*
     if (!$conn) {
         echo "<script>alert(\"DB Connection False\");</script>";
