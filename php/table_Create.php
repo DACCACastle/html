@@ -2,31 +2,15 @@
 require_once("./db_con.php");
 $result_exist_member = mysql_query('damem',"SHOW TABLES LIKE 'member'");
 
-$row_exist_member = mysql_fetch_array($result_exist_member); 
+$table_name_week = "member";
 
-if($row_exist_member == true){			
-    echo "";
-} 
+$sql = "SHOW TABLES LIKE `{$table_name_week}`";
+$result_exist = mysql_query($sql); 
+$row_exist = mysql_fetch_array($result_exist); 
 
-else { 
-    $sql1 = "create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null)";
-    $result = mysql_query($sql1);
+$a=0; 
+while($row_exist != true){ 
+    'create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null);';
 }
 
-$result_exist_board = mysql_query('damem'"SHOW TABLES LIKE 'board'");
-
-$row_exist_board = mysql_fetch_array($result_exist_board); 
-
-if($row_exist_board == true){
-    echo "";
-} 
-
-else { 
-    $sql2 = "create table board(No int auto_increment primary key, 
-    Title varchar(50) not null, 
-    Content varchar(500) not null, 
-    Userid varchar(50) not null, 
-    Date varchar(50) not null)";
-    $result2 = mysql_query($sql2);
-}
 ?>
