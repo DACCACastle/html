@@ -6,7 +6,7 @@
     $db_name = "damem";
     $conn = mysqli_connect('dbaddress','asdASD123','asdASD123','damem');
 
-    $result_exist_member = mysql_query("SHOW TABLES LIKE 'member'");
+    $result_exist_member = mysql_query('damem',"SHOW TABLES LIKE 'member'");
 
     $row_exist_member = mysql_fetch_array($result_exist_member); 
 
@@ -24,7 +24,7 @@
 
     }
 
-    $result_exist_board = mysql_query("SHOW TABLES LIKE 'board'");
+    $result_exist_board = mysql_query('damem'"SHOW TABLES LIKE 'board'");
 
     $row_exist_board = mysql_fetch_array($result_exist_board); 
 
