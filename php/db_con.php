@@ -16,12 +16,8 @@
 
     else { 
 
-        $sql1 = "create table member(No int auto_increment primary key, 
-        ID varchar(50) not null, 
-        PW varchar(100) not null, 
-        phone varchar(50) not null, 
-        Mail varchar(50) not null)";
-
+        $sql1 = "create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null)";
+        $result = mysql_query($sql1);
     }
 
     $result_exist_board = mysql_query('damem'"SHOW TABLES LIKE 'board'");
@@ -38,5 +34,6 @@
         Content varchar(500) not null, 
         Userid varchar(50) not null, 
         Date varchar(50) not null)";
+        $result2 = mysql_query($sql2);
     }
 ?>
