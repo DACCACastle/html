@@ -1,16 +1,8 @@
 <?php
-require_once("./db_con.php");
-$result_exist_member = mysql_query('damem',"SHOW TABLES LIKE 'member'");
+    include_once './db_con.php'; // DB 연결
 
-$table_name_week = "member";
+    $sql ="create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null);";
 
-$sql = "SHOW TABLES LIKE `{$table_name_week}`";
-$result_exist = mysql_query($sql); 
-$row_exist = mysql_fetch_array($result_exist); 
-
-$a=0; 
-while($row_exist != true){ 
-    'create table member(No int auto_increment primary key, ID varchar(50) not null, PW varchar(100) not null, phone varchar(50) not null, Mail varchar(50) not null);';
-}
-
+    $result=mysqli_query($conn,$sql);
+    mysqli_close($conn);
 ?>
