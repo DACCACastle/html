@@ -19,31 +19,73 @@
             margin-left: auto;
         }
 
+        @media (max-width: 767px) {
+            #large{
+                display: none;
+            }
+            #small{
+                display: block;
+            }
+            .container {
+                width: auto;
+            }
+        }
+
         @media (min-width: 768px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
             .container {
                 width: 750px;
             }
         }
 
         @media (min-width: 992px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
             .container {
                 width: 970px;
             }
         }
 
         @media (min-width: 1200px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
             .container {
                 width: 1170px;
             }
         }
 
         @media (min-width: 1500px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
             .container {
                 width: 1450px;
             }
         }
 
         @media (min-width: 1800px) {
+            #large{
+                display: none;
+            }
+            #small{
+                display: block;
+            }
             .container {
                 width: 1750px;
             }
@@ -254,17 +296,20 @@
 
             <div class="carousel-inner">
                 <div class="item">
-                    <img src="./images/main8.png" alt="aven">
+                    <img id="large" src="./images/main8.png" alt="aven">
+                    <img id="small" src="./images/main_s1.png" alt="aven">
                 </div>
 
                 <div class="item active">
-                    <img src="./images/main5.png" alt="main2">
+                    <img id="large" src="./images/main5.png" alt="main2">
+                    <img id="small" src="./images/main_s2.png" alt="main2">
                     <div class="carousel-caption">
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="./images/main1.png" alt="camp">
+                    <img id="large" src="./images/main1.png" alt="camp">
+                    <img id="small" src="./images/main_s3.png" alt="camp">
                     <div class="carousel-caption">
                     </div>
                 </div>
@@ -281,7 +326,9 @@
             </a>
         </div>
 
-        <img src="./images/main6.png" alt="aven" class="mainImg">
+        <img id="large" src="./images/main6.png" alt="aven" class="mainImg">
+        <img id="small" src="./images/main_s4.png" alt="aven" class="mainImg">
+ 
         <br><br><br>
     </div>
     <!--
