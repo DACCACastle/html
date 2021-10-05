@@ -13,43 +13,131 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
-        a:link {
-            color: black;
-            text-decoration: none;
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
         }
 
-        a:visited {
-            color: black;
-            text-decoration: none;
+        @media (max-width: 767px) {
+            #large{
+                display: none;
+            }
+            #small{
+                display: block;
+            }
+            .container {
+                width: auto;
+            }
         }
 
-        a:hover {
-            color: black;
-            text-decoration: none;
+        @media (min-width: 768px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
+            .container {
+                width: 750px;
+            }
         }
 
-        a:active {
-            color: black text-decoration: none;
+        @media (min-width: 992px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
+            .container {
+                width: 970px;
+            }
         }
 
-        .a {
-            text-decoration: none
+        @media (min-width: 1200px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
+            .container {
+                width: 1170px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
+            .container {
+                width: 1450px;
+            }
+        }
+
+        @media (min-width: 1800px) {
+            #large{
+                display: block;
+            }
+            #small{
+                display: none;
+            }
+            .container {
+                width: 1750px;
+            }
         }
 
         .navbar {
             font-size: 20px;
+            height: 7%;
             margin-bottom: 0;
             border-radius: 0;
-            margin-top: 17px;
             outline: 0;
             border: 0;
             font-family: SpoqaHanSansNeo-Regular;
+            padding-top: 0.3%;
             text-align: center;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .navbar-nav {
+
+            display: inline-block;
+            float: none;
+
+        }
+
+
+
+        .navbar .navbar-collapse {
+
+            text-align: center;
+
+        }
+
+        .collapse>.nav>ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
         .carousel-inner>.item>img {
-            width: 1980px;
-            height: 600px;
+            width: 100%;
+            height: auto;
+        }
+
+        .mainImg {
+            width: 100%;
+            height: auto;
         }
 
         .modal-content {
@@ -60,7 +148,7 @@
 
         .collapse>.nav>li>a {
             color: black;
-            width: 230px;
+
         }
 
         .collapse>.nav>li>a:hover {
@@ -68,20 +156,136 @@
             background-color: black;
         }
 
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .rounded {
+            border-radius: .80rem !important
+        }
+
         .carousel-control.left,
         .carousel-control.right {
             background-image: none
         }
 
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0;
+        .row>.col-md-4>.collapse>span {
+            font-family: NEXON Lv1 Gothic OTF;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .row>.col-md-4>.collapse>p {
+            margin-bottom: 10px;
+        }
+
+
+        @font-face {
+            font-family: 'IM_Hyemin-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'twaysky';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Cafe24SsurroundAir';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SpoqaHanSansNeo-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GowunDodum-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
     </style>
 
+
+    <!-- Navigation Bar Container -->
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-sm" style="background-color: #ffff">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNav"
+                        style="color: black;">
+                        <span class="icon-bar" style="background-color: black;"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index_auth.html" style="width: 200px;">
+                        <img style="max-width:150px; margin-top: -12px; margin-right: 100px; margin-left: 20px;"
+                            src="./images/logo2.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse " id="MyNav" style="color:black; background-color: #ffff; ">
+                    <ul class="nav navbar-nav" style="display: flex; justify-content: space-around; margin: 0;">
+                        <li><a href="./class.html">클래스</a></li>
+                        <li><a href="./store.html">스토어</a></li>
+                        <li><a href="stream.html">LIVE</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">고객센터</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./php/board.php">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./php/logout.php"><span class="glyphicon glyphicon-log-out"></span>
+                                로그아웃</a></li>
+                    </ul>
+
+
+                </div>
+        </nav>
+        <br><br><br>
+    </div>
+
 </head>
 
-<body style="font-family: 'Nanum Gothic', sans-serif;">
+<body class="container">
     <!-- Navigation Bar Container -->
     <div class="container">
         <div class="row">
