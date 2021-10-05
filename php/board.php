@@ -20,73 +20,31 @@
             margin-left: auto;
         }
 
-        @media (max-width: 767px) {
-            #large{
-                display: none;
-            }
-            #small{
-                display: block;
-            }
-            .container {
-                width: auto;
-            }
-        }
-
         @media (min-width: 768px) {
-            #large{
-                display: block;
-            }
-            #small{
-                display: none;
-            }
             .container {
                 width: 750px;
             }
         }
 
         @media (min-width: 992px) {
-            #large{
-                display: block;
-            }
-            #small{
-                display: none;
-            }
             .container {
                 width: 970px;
             }
         }
 
         @media (min-width: 1200px) {
-            #large{
-                display: block;
-            }
-            #small{
-                display: none;
-            }
             .container {
                 width: 1170px;
             }
         }
 
         @media (min-width: 1500px) {
-            #large{
-                display: block;
-            }
-            #small{
-                display: none;
-            }
             .container {
                 width: 1450px;
             }
         }
 
         @media (min-width: 1800px) {
-            #large{
-                display: block;
-            }
-            #small{
-                display: none;
-            }
             .container {
                 width: 1750px;
             }
@@ -131,13 +89,8 @@
         }
 
         .carousel-inner>.item>img {
-            width: 100%;
-            height: auto;
-        }
-
-        .mainImg {
-            width: 100%;
-            height: auto;
+            width: 1980px;
+            height: 600px;
         }
 
         .modal-content {
@@ -148,7 +101,6 @@
 
         .collapse>.nav>li>a {
             color: black;
-
         }
 
         .collapse>.nav>li>a:hover {
@@ -161,52 +113,32 @@
             margin-top: 0;
         }
 
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+
+        .a {
+            text-decoration: none
+        }
+
         .rounded {
             border-radius: .80rem !important
-        }
-
-        .carousel-control.left,
-        .carousel-control.right {
-            background-image: none
-        }
-
-        .row>.col-md-4>.collapse>span {
-            font-family: NEXON Lv1 Gothic OTF;
-            margin: 0;
-            font-size: 15px;
-        }
-
-        .row>.col-md-4>.collapse>p {
-            margin-bottom: 10px;
-        }
-
-
-        @font-face {
-            font-family: 'IM_Hyemin-Bold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'EliceDigitalBaeum_Bold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'twaysky';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Cafe24SsurroundAir';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
         }
 
         @font-face {
@@ -216,23 +148,19 @@
             font-style: normal;
         }
 
-        @font-face {
-            font-family: 'EliceDigitalBaeum_Bold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
+        .col-md-8>.row>.text-center>span {
+            font-family: NEXON Lv1 Gothic OTF;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .col-md-8>.row>.text-center>p {
+            margin-bottom: 10px;
         }
 
         @font-face {
             font-family: 'NEXON Lv1 Gothic OTF';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'GowunDodum-Regular';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -244,7 +172,6 @@
             font-style: normal;
         }
     </style>
-
 
     <!-- Navigation Bar Container -->
     <div class="container">
@@ -282,10 +209,9 @@
         </nav>
         <br><br><br>
     </div>
-
 </head>
 
-<body class="container">
+<body>
     <!-- Navigation Bar Container -->
     <div class="container">
         <div class="row">
